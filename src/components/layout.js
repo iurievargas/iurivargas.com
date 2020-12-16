@@ -2,11 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
 import { scale } from "../utils/typography"
+// import { useStaticQuery, graphql } from "gatsby"
 
 import Footer from "./footer"
 import "./global.css"
+// import SidebarLink from "./sidebar-link/sidebar-link"
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, title, children}) => {
   const toggle = (
     <ThemeToggler>
       {({ toggleTheme, theme }) => {
@@ -56,7 +58,21 @@ const Layout = ({ location, title, children }) => {
     </ThemeToggler>
   )
 
+  // const data = useStaticQuery(graphql`
+  //   query SidebarLinkQuery {
+  //     site {
+  //       siteMetadata {
+  //         links 
+  //       }
+  //     }
+  //   }
+  // `)
+
+  // const { links } = data.site.siteMetadata
+
   const header = (
+    
+    
     <>
       {toggle}
       <h2
@@ -77,6 +93,12 @@ const Layout = ({ location, title, children }) => {
           {title}
         </Link>
       </h2>
+
+    <div>
+
+    
+    
+    </div>
     </>
   )
 

@@ -1,3 +1,5 @@
+require(`dotenv`).config()
+
 module.exports = {
   pathPrefix: "/iurivargas",
   siteMetadata: {
@@ -12,9 +14,17 @@ module.exports = {
       twitter: `ry_zou`,
     },
     defaultImage: "images/bg.jpeg",
+    links: [{
+        title: "Sobre",
+        url: "/sobre"
+      },
+      {
+        title: "Contato",
+        url: "/contato"
+      }
+    ]
   },
-  plugins: [
-    {
+  plugins: [{
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -31,8 +41,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          {
+        plugins: [{
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
@@ -44,9 +53,20 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          {
+            resolve: `gatsby-plugin-algolia`,
+            options: {
+              appId: process.env.GATSBY_ALGOLIA_APP_ID,
+              apiKey: process.env.ALGOLIA_ADMIN_KEY,
+              queries: require("./src/utils/algolia-queries")
+            },
+          },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          `gatsby-remark-reading-time`,
+          `gatsby-plugin-styled-components`,
+          `gatsby-plugin-fontawesome-css`
         ],
       },
     },

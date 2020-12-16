@@ -42,6 +42,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginBottom: rhythm(1),
           }}
         />
+        <p>{post.references}</p>
         <footer>
           <Bio />
         </footer>
@@ -91,9 +92,11 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 160)
       html
       frontmatter {
+        date(formatString: "DD MMMM, YYYY", locale: "pt-br")
         title
-        date(formatString: "MMMM DD, YYYY")
         description
+        references
+        categories
       }
     }
   }
