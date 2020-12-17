@@ -70,7 +70,6 @@ const BlogIndex = ({
       { hits.length > 0 ? (
         
         <div className="post-feed">
-          <span>{hits.length} resultados encontrados</span>
           {
             hits.map((hit) => {
               const title = hit.title || hit.slug
@@ -117,45 +116,12 @@ const BlogIndex = ({
       <div className="outer">
         <div className="inner">
           <InstantSearch searchClient={searchClient} indexName="Pages">
-            <SearchBox />
-            <VoiceSearch/>
+            <SearchBox className="search-button" translations={{ placeholder: 'Pesquise por uma publicação...'}}/>
             <Hits />
-            <Pagination/>
+            
           </InstantSearch>
         </div>
       </div>
-
-
-
-
-
-
-      <nav>
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {!isFirst && (
-              <Link to={prevPage} rel="prev" style={{ boxShadow: `none` }}>
-                Página Anterior
-              </Link>
-            )}
-          </li>
-          <li>
-            {!isLast && (
-              <Link to={nextPage} rel="next" style={{ boxShadow: `none` }}>
-                Próxima Página
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
     </Layout>
   )
 }

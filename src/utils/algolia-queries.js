@@ -5,6 +5,7 @@ const indexName = `Pages`
 
 const pageQuery = `{
   pages: allMarkdownRemark(
+    sort: { fields: [frontmatter___date], order: DESC }
     filter: {
       fileAbsolutePath: { regex: "/${escapeStringRegexp(pagePath)}/" },
     }

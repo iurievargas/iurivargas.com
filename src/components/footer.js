@@ -2,7 +2,7 @@ import React from "react"
 
 const Footer = () => {
   return (
-    <footer className="my-12 text-center">
+    <footer className="text-center" style={{marginTop: "5px", paddingTop: "10px", fontSize: "10px"}}>
       © {new Date().getFullYear()}, iurivargas.com 
       {'   '}
       <a class="link" href="/policies">Política de Privacidade</a>

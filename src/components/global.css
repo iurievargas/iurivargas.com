@@ -90,6 +90,19 @@ button {
   z-index: 10;
   padding: 0 20px 0;
   margin-left: 0;
+  flex-grow: 1;
+}
+
+.main-content > main {
+    height: 70vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+}
+
+.main-content > main::-webkit-scrollbar {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -104,6 +117,16 @@ button {
     margin-left: 380px;
     top: 0;
   }
+  
+  .main-content > main {
+    height: 90vh;
+  }
+
+  .search-button > form > button[type=reset]  {
+    left: 100px !important;
+  }
+
+  
 }
 
 ::-webkit-scrollbar {
@@ -123,4 +146,35 @@ button {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+
+.search-button > form > input  {
+  width: 100%;
+  margin-top: 20px;
+  border-bottom: silver solid 1px ! important;
+  height: 50px;
+  font-size: 24px;
+  text-decoration: none;
+  outline: none;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  font-style: italic;
+  color: silver;
+  background: transparent;
+  
+}
+
+.search-button > form > button[type=submit]  {
+  display: none;
+}
+
+.search-button > form > input:not([value=""])  {
+  padding-left: 20px;
+}
+.search-button > form > button[type=reset]  {
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    fill: silver;
 }

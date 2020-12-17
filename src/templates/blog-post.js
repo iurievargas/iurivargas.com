@@ -20,9 +20,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       <article>
         <header>
           <h1
-            style={{
-              marginBottom: 0,
-            }}
+            style={{marginBottom: 0}}
           >
             {post.frontmatter.title}
           </h1>

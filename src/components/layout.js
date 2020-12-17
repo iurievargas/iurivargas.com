@@ -58,21 +58,7 @@ const Layout = ({ location, title, children}) => {
     </ThemeToggler>
   )
 
-  // const data = useStaticQuery(graphql`
-  //   query SidebarLinkQuery {
-  //     site {
-  //       siteMetadata {
-  //         links 
-  //       }
-  //     }
-  //   }
-  // `)
-
-  // const { links } = data.site.siteMetadata
-
-  const header = (
-    
-    
+  const header = ( 
     <>
       {toggle}
       <h2
@@ -93,12 +79,6 @@ const Layout = ({ location, title, children}) => {
           {title}
         </Link>
       </h2>
-
-    <div>
-
-    
-    
-    </div>
     </>
   )
 
@@ -109,6 +89,9 @@ const Layout = ({ location, title, children}) => {
         color: "var(--textNormal)",
         transition: "color 0.2s ease-out, background 0.2s ease-out",
         minHeight: "100vh",
+        display: "flex",
+        minHeight: "100vh",
+        flexDirection: "column"
       }}
     >
       <div className="sidebar">
