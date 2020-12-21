@@ -5,26 +5,38 @@ module.exports = {
   siteMetadata: {
     title: `iurivargas`,
     author: {
-      name: `@iurievargas`,
-      summary: `system analyst`,
+      name: `Iuri Egevarth Vargas`,
+      summary: `Pós-graduando em gestão de pessoas, graduado em sistemas, analista de sistemas, product owner, programador e criador de conteúdos nas horas vagas.`,
     },
-    description: `A simple, fixed sidebar two columns Gatsby.js blog starter.`,
+    description: `Um misto de blog com portifólio que tem o propósito de compartilhar conteúdos e um pouco da minha carreira.`,
     siteUrl: `https://iurivargas.com`,
+    donate: {
+      picpay: `https://app.picpay.com/user/iurievargas`,
+      mercadopago: `https://mpago.la/1EyhEoo`
+    },
     social: {
-      twitter: `ry_zou`,
+      twitter: `iurievargas`,
+      instagram: `iurievargas`,
+      linkedin: `iurivargas`,
+      medium: `iuri.evargas`,
+      github: `iurievargas`,
+      whatsapp: `+5551999025656`,
+      gmail: `iuri.evargas@gmail.com`
     },
     defaultImage: "images/bg.jpeg",
     links: [{
         title: "Sobre",
         url: "/sobre"
-      },
-      {
-        title: "Contato",
-        url: "/contato"
       }
     ]
   },
   plugins: [{
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `iurivargas`
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,

@@ -5,9 +5,12 @@ const indexName = `Pages`
 
 const pageQuery = `{
   pages: allMarkdownRemark(
-    sort: { fields: [frontmatter___date], order: DESC }
+    sort: { fields: [frontmatter___date], order: DESC }    
     filter: {
-      fileAbsolutePath: { regex: "/${escapeStringRegexp(pagePath)}/" },
+      fileAbsolutePath: { 
+        regex: "/${escapeStringRegexp(pagePath)}/" 
+      }
+      frontmatter: { title: { ne: "biografia" } } 
     }
   ) {
     edges {

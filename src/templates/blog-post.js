@@ -5,11 +5,64 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import { Disqus } from "gatsby-plugin-disqus"
+import Donate from "../components/donate/donate"
+import BackToHomeLink from "../components/back-to-home"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
-  // const siteTitle = data.site.siteMetadata.title
+
   const { previous, next } = pageContext
+
+  const referencias = (
+    <div>
+      <h4>Referências</h4>
+      <ul
+        style={{
+          paddingLeft: 20,
+        }}
+      >
+        {post.frontmatter.references.map(value => {
+          return (
+            <li>
+              <a href={value}>{value}</a>
+            </li>
+          )
+        })}
+      </ul>
+      <hr />
+    </div>
+  )
+
+  const relacionados = (
+    <nav>
+      <ul
+        style={{
+          display: `flex`,
+          flexWrap: `wrap`,
+          justifyContent: `space-between`,
+          listStyle: `none`,
+          padding: 0,
+        }}
+      >
+        <li>
+          {previous && (
+            <Link to={previous.fields.slug} rel="prev">
+              ← {previous.frontmatter.title}
+            </Link>
+          )}
+        </li>
+        <li>
+          {next && (
+            <Link to={next.fields.slug} rel="next">
+              {next.frontmatter.title} →
+            </Link>
+          )}
+        </li>
+      </ul>
+    </nav>
+
+  )
 
   return (
     <Layout location={location} title="Início">
@@ -19,9 +72,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       />
       <article>
         <header>
-          <h1
-            style={{marginBottom: 0}}
-          >
+          <BackToHomeLink />
+          <h1 style={{ marginBottom: 0, marginTop: 20 }}>
             {post.frontmatter.title}
           </h1>
           <p
@@ -40,38 +92,27 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginBottom: rhythm(1),
           }}
         />
-        <p>{post.references}</p>
-        <footer>
-          <Bio />
+
+        <Donate />
+        <hr />
+        {referencias}
+
+        <footer style={{ marginTop: 10 }}>
+          <Bio />        
+
+          {relacionados}
+
+          <Disqus
+            config={{
+              url: post.frontmatter.slug,
+              identifier: post.frontmatter.slug,
+              title: post.frontmatter.title,
+            }}
+          />
+
+          
         </footer>
       </article>
-
-      <nav>
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
     </Layout>
   )
 }

@@ -1,10 +1,10 @@
 import React from "react"
 import "./sidebar-link.css"
 
-const SidebarLink = ({title, url}) => {
+const SidebarLink = ({title, url, target}) => {
   return (
     <span className="sidebar-link">
-      <a          
+      <a  target={target}        
           href={url}>
           {title}
         </a>

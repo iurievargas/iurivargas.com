@@ -55,6 +55,15 @@ const Bio = () => {
       />
       <p>
         Publicado por <strong>{author.name}</strong>
+        <br />
+        <span
+          style={{
+            fontStyle: `italic`,
+            fontWeight: 200,
+            fontSize: 14,
+          }}>
+          {author.summary}
+        </span>
       </p>
     </div>
   )
