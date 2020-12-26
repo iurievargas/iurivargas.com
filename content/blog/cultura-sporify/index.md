@@ -9,9 +9,13 @@ comments: true
 
 Muitas empresas buscam por metodologias que as possibilitem serem mais ágeis em seus processos, no caso do Spotify, processos relacionados à desenvolvimento de software. Um dos cases de sucesso do Spotify é a sua cultura ágil. Em 2018, quando seu primeiro player de música foi lançado, a empresa já utilizava Scrum em seus processos de desenvolvimento.
 
-> "Scrum é um framework de gerenciamento de projetos, ele proporciona organização no desenvolvimento ágil de produtos complexos, visando entregar o  mais alto valor possível através de várias técnicas."
+> Scrum é um framework de gerenciamento de projetos, ele proporciona organização no desenvolvimento ágil de produtos complexos, visando entregar o  mais alto valor possível através de várias técnicas."
 
-Com o passar de alguns anos a quantidade de times dentro da empresa começou a aumentar, e a empresa foi notando que ser ágil vai muito além dos princípios de qualquer framework, um dos motivos pelo qual fez a empresa realizar algumas adaptações no seu processo de desenvolvimento. A empresa então decidiu deixar algumas regras do *scrum* como opcionais, renomeou o papel *scrum master* para *agile coach* pois queriam possuír mais líderes do que mestres em processos, passou a utilizar o termo *squads* no lugar de times *scrum* pois queria tornar esse grupo de pessoas mais autônomos. Mas porque as squads se tornariam mais  autônomas? A resposta é simples, cada *squad* possui um time multifuncional e auto organizado, geralmente com menos de oito pessoas. Eles sentam juntos e possuem total responsabilidade pelo que desenvolvem, sustentam e entregam. Cada *squad* possui sua missão a longo prazo, como por exemplo, uma das *squad* da empresa, que tem como objetivo tornar o Spotify o lugar ideal para colecionar músicas e escutá-las. A autonomia das *squad* representa decidir o que construir, como construir e principalmente como trabalhar em conjunto durante o processo de desenvolvimento. 
+Com o passar de alguns anos a quantidade de times dentro da empresa começou a aumentar, e a empresa foi notando que ser ágil vai muito além dos princípios de qualquer framework, um dos motivos pelo qual fez a empresa realizar algumas adaptações no seu processo de desenvolvimento. A empresa então decidiu deixar algumas regras do *scrum* como opcionais, renomeou o papel *scrum master* para *agile coach* pois queriam possuír mais líderes do que mestres em processos, passou a utilizar o termo *squads* no lugar de times *scrum* pois queria tornar esse grupo de pessoas mais autônomos. 
+
+### Mas porque as squads se tornariam mais  autônomas? 🤔
+
+A resposta é simples, cada *squad* possui um time multifuncional e auto organizado, geralmente com menos de oito pessoas. Eles sentam juntos e possuem total responsabilidade pelo que desenvolvem, sustentam e entregam. Cada *squad* possui sua missão a longo prazo, como por exemplo, uma das *squad* da empresa, que tem como objetivo tornar o Spotify o lugar ideal para colecionar músicas e escutá-las. A autonomia das *squad* representa decidir o que construir, como construir e principalmente como trabalhar em conjunto durante o processo de desenvolvimento. 
 
 Todos os escritórios da empresa são otimizados para atender a necessidade das *squads* focando na colaboração, onde todos os membros de uma determinada *squad* trabalham juntos, com mesas ajustáveis e com fácil acesso a tela uns dos outros. A autonomia é motivadora e os torna mais velozes, deixando as decisões acontecerem ali mesmo, na hora, ao invés de um monte de reuniões. Isso ajuda a minimizar o tempo de espera das decisões e assim se consegue escalar sem que haja uma sobrecarga de dependências.
 
@@ -22,8 +26,7 @@ Alinhamento e autonomia podem ser vistos em diferentes extremos em uma escala: *
 Veja a representação dos exemplos acima na imagem abaixo:
 
 <img src="./alignment-autonomy-scale.png" 
-width="600"
-alt="Ilustração das extremidades entre alinhamento e autonomia."/>
+alt="Ilustração das extremidades entre alinhamento e autonomia." style="zoom:150%;" />
 
 ### Conclusão
 

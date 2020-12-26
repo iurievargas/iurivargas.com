@@ -54,10 +54,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [{
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 590,
-            },
+            resolve: `gatsby-remark-images`
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
@@ -87,15 +84,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-62251910-1`,
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Ryz`,
-        short_name: `Ryz`,
+        name: `iurievargas`,
+        short_name: `iurievargas`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
