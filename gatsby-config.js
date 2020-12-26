@@ -89,6 +89,13 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `@isamrish/gatsby-plugin-google-adsense`,
+      options: {
+        googleAdClientId: process.env.GOOGLE_ADSENSE_TRACKING_ID,
+        head: false
+      }
+    },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
