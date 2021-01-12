@@ -1,0 +1,26 @@
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0; 
+    height: 80px;
+    width: 100%;
+    padding: 10px 10%;
+    background-color: var(--lightBg);
+    z-index: 999;
+}
+
+.navbar > button {
+    position: absolute;
+    top: 25px;
+    right: 10%;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar {
+      padding: 10px 25%;
+    }
+
+    .navbar > button {
+        right: 25%;
+    }
+}

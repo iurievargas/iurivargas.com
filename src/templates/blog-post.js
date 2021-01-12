@@ -61,11 +61,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         </li>
       </ul>
     </nav>
-
   )
 
   return (
-    <Layout location={location} title="Início">
+    <Layout location={location} title="iurivargas">
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -86,6 +85,18 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {post.frontmatter.date}
           </p>
         </header>
+
+        <div>
+          <div>
+            <h3>Olá!</h3>
+            <span>Tudo bem?</span>
+          </div>
+          
+          <div style={{ marginTop: 10, marginBottom: 15}}>
+            <span>{post.frontmatter.description}</span>
+          </div>
+        </div>
+
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
@@ -98,7 +109,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         {referencias}
 
         <footer style={{ marginTop: 10 }}>
-          <Bio />        
+          <Bio />
 
           {relacionados}
 
@@ -109,8 +120,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               title: post.frontmatter.title,
             }}
           />
-
-          
         </footer>
       </article>
     </Layout>

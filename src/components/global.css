@@ -41,6 +41,17 @@ blockquote {
   color: var(--textTitle);
 }
 
+blockquote{
+  border-left-color: var(--textNormal);
+}
+
+span,
+svg,
+p,
+small {
+  color: var(--textNormal) !important;
+}
+
 .footnotes {
   word-break: break-all;
 }
@@ -71,60 +82,9 @@ button {
 
   outline: 0;
 }
-.sidebar {
-  height: 205px;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  text-align: center;
-  background-color: var(--lightBg);
-}
-
-.main-content {
-  background-color: var(--bg);
-  position: absolute;
-  top: 200px;
-  z-index: 10;
-  padding: 0 20px 0;
-  margin-left: 0;
-  width: -webkit-fill-available;
-  flex-grow: 1;
-}
-
-.main-content > main {
-    height: 70vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none; 
-}
-
-.main-content > main::-webkit-scrollbar {
-  display: none;
-}
-
 
 
 @media only screen and (min-width: 768px) {
-  .sidebar {
-    height: 100vh;
-    width: 380px;
-  }
-  .main-content {
-    padding: 0 100px 0;
-    height: 100vh;
-    width: calc(100% - 380px);
-    margin-left: 380px;
-    top: 0;
-  }
-
-  .main-content > main {
-    height: 90vh;
-  }
-
   .search-button > form > button[type=reset]  {
     left: 100px !important;
   }
@@ -152,16 +112,15 @@ button {
 }
 
 .search-button > form > input  {
-  width: 100%;
+  width: 300px;
   margin-top: 20px;
-  border-bottom: silver solid 1px ! important;
+  border: #edf2f7 solid 0.1px ! important;
+  border-radius: 30px;
+  padding: 15px;
   height: 50px;
-  font-size: 24px;
+  font-size: 18px;
   text-decoration: none;
   outline: none;
-  border-right: none;
-  border-left: none;
-  border-top: none;
   font-style: italic;
   color: silver;
   background: transparent;
@@ -180,4 +139,11 @@ button {
     top: 35px;
     left: 20px;
     fill: silver;
+}
+
+
+
+
+.inner > .ais-SearchBox.search-button {
+  text-align: center;
 }

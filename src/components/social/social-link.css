@@ -9,7 +9,7 @@
 .social-link:hover {
   background-color: transparent;
   transform: rotate(360deg) scale(1.5);
-  top: 5px;
+  top: 2px;
   cursor: pointer;
   box-shadow: none;
 }
