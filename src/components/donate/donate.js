@@ -24,7 +24,7 @@ const Donate = () => {
     }}>
       <h3>
         Gostou dessa publicação? Aceito um cafézinho
-        <span class="small" role="img" aria-label="Emoji de café">
+        <span class="small" style={{marginLeft: `5px`}} role="img" aria-label="Emoji de café">
           ☕️
         </span>
         <span class="small" role="img" aria-label="Emoji com olhos de coração">

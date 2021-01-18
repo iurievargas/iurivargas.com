@@ -12,10 +12,10 @@ const Footer = () => {
         <SocialLink type={`whatsapp`} />
       </div>
 
-      <div id="terms">
 
+      <div id="terms">
         <ul>
-        <li>
+          <li>
             <a href="/about">Sobre mim</a>
           </li>
           <li>
@@ -27,10 +27,6 @@ const Footer = () => {
             >Termos</a>
           </li>
         </ul>
-        
-          
-          
-      
       </div>
     </div>
   )

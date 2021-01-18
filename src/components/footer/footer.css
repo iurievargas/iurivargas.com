@@ -1,23 +1,27 @@
 .footer {
     text-align: center;
-    padding: 20px 10%;
+    padding: 15px 10%;
     font-size: 12px;
     position: fixed;
     bottom: 0;
-    height: 60px;
+    height: 70px;
     background-color: var(--lightBg);
     width: 100%;
     z-index: 999;
 }
 
 .footer > #social {
-    position: absolute;
-    left: calc(10% - 10px);
+    text-align: center;
     font-size: 15px;
 }
 
 .footer > #terms {
-    text-align: right;
+    text-align: center;
+}
+
+#terms > ul {
+    margin: 0px;
+    
 }
 
 #terms > ul > li {
@@ -46,10 +50,16 @@
 @media only screen and (min-width: 768px) {
     .footer {
       padding: 20px 25%;
+      height: 60px;
     }
 
     .footer > #social {
+        position: absolute;
         left: calc(25% - 10px);
+    }
+
+    .footer > #terms {
+        text-align: right;
     }
 }
 
