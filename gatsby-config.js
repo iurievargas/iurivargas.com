@@ -3,10 +3,10 @@ require(`dotenv`).config()
 module.exports = {
   pathPrefix: "/iurivargas",
   siteMetadata: {
-    title: `iurivargas`,
+    title: `Iuri Vargas`,
     author: {
       name: `Iuri Egevarth Vargas`,
-      summary: `Pós-graduando em gestão de pessoas, graduado em sistemas, analista de sistemas, product owner, programador e criador de conteúdos nas horas vagas.`,
+      summary: `Pós-graduando em gestão de pessoas, graduado em sistemas, team leader, analista de sistemas e programador.`,
     },
     description: `Um misto de blog com portifólio que tem o propósito de compartilhar conteúdos e um pouco da minha carreira.`,
     siteUrl: `https://iurivargas.com`,
@@ -89,13 +89,13 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `@isamrish/gatsby-plugin-google-adsense`,
-      options: {
-        googleAdClientId: process.env.GOOGLE_ADSENSE_TRACKING_ID,
-        head: false
-      }
-    },
+    // {
+    //   resolve: `@isamrish/gatsby-plugin-google-adsense`,
+    //   options: {
+    //     googleAdClientId: process.env.GOOGLE_ADSENSE_TRACKING_ID,
+    //     head: false
+    //   }
+    // },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,

@@ -1,41 +1,58 @@
 ---
 title: Bruce Tuckman e os estágios de formação de equipes 
 date: "2018-10-03T07:26:03.284Z"
-description: "Este artigo tem como o objetivo explicar um pouco o que é a teoria criada por Bruce Tuckman sobre as fases evolutivas de uma equipe."
+description: "Este artigo tem como o objetivo explicar um pouco como funciona a teoria criada por Bruce Tuckman sobre as fases evolutivas de uma equipe."
 categories: [Agilidade, Team Build]
 comments: true
 references: ["https://pt.wikipedia.org/wiki/Modelo_de_Tuckman"]
 ---
 
-Olá, tudo bem?
+[Bruce Tuckman]([https://link](https://en.wikipedia.org/wiki/Bruce_Tuckman)), foi um pesquisador americano nascido em 1938, ele ficou conhecido por uma de suas teorias que explicava os estágios de desenvolvimento de uma equipe, mais conhecida como *Tuckman's stages of group development*. Ela foi publicada em 1965, e basicamente era dividida em quatro ciclos: *forming, storming, norming e performing*.
+<br>
+<br>
 
-Hoje trago um assunto que venho estudando nos últimos dias, o modelo de Tuckman.
-
-[Bruce Tuckman]([https://link](https://en.wikipedia.org/wiki/Bruce_Tuckman)), foi um pesquisador americano nascido em 1938 que ficou conhecido por uma de suas teorias publicada no ano de 1965. Essa teoria é conhecida por *Tuckman's stages of group development* - Os estágios de desenvolvimento de equipe de Tuckman. Naquela época, sua teoria era composta por quatro estágios
-
-- O primeiro estágio é o *Forming* e explica a processo de formação da equipe. Neste período, o líder expõem o propósito da equipe, tarefas e geralmente existe um certo receio por parte dos membros da equipe devido o momento de adaptação, iteração e conhecimento mútuo entre os integrantes da equipe. Nesta etapa, é fundamental o trabalho do líder para nortear a equipe.
+### Forming
+O primeiro ciclo é onde forma-se uma nova equipe, a liderança explica o propósito e objetivos desta equipe para seus membros que geralmente sentem um certo receio pelo momento de adaptação e iteração que se fará presente todos os dias. Ainda não há engajamento, neste caso o papel do lider torna-se fundamental para conseguir deixar explícito qual rumo deve-se seguir e acompanhar a evolução desta equipe.
   
-<img src="https://lh3.googleusercontent.com/-NB7EygnYeUw/X9APhLmj49I/AAAAAAAAKog/6bHx66KHw0IWnxRv5D7_98sT1zWyOtbegCLcBGAsYHQ/image.png | s" alt="alt" style="zoom:200%;" />
+![Treinador de futebol conversando com equipe infantil.](./img/forming.jpg)
+<br>
+<br>
 
-- O segundo estágio é o *Storming* e explica a confrontação entre os integrantes da equipe. Neste período, as metas da equipe já estão definidas, por hora, as responsabilidades e papéis de cada integrante da equipe não. Gerando assim, diversos conflitos até que essas definições sejam realizadas. O papel do líder é fundamental para solução desses conflitos.
+### Storming
+O segundo ciclo inicia quando os membros da equipe começam a se confrontar. Neste cilo, as metas da equipe já estão definidas mas as responsabilidades e papéis de cada integrante ainda não, gerando dificuldades de se chegar em um senso comum, conflitos e desconforto para essas pessoas. Neste caso, o papel do líder continua sendo fundamental de modo que consiga acompanhar a evolução da equipe e ser um facilitador na resolução desses conflitos.
   
+![Homem conversando em tom de desentendimento com duas mulheres.](./img/storming.jpg)
+<br>
+<br>
 
-  <img src="https://lh3.googleusercontent.com/-ybsX8VtSecc/X9AQacfxozI/AAAAAAAAKos/zK_eytPipjwzuxKyAzp6P2S8ULPiqxokwCLcBGAsYHQ/w400-h250/image.png | s" alt="alt" style="zoom:200%;" />
+### Norming
+O terceiro ciclo trata a normalização da equipe. Nele, os processo já estão definidos e o entusiasmo e níveis de competência dos membros cresce. Os integrantes já conhecem uns aos outros, e tanto o respeito quanto o trabalho em equipe começam a se fazer presentes no dia-dia da equipe.
 
-- O terceiro estágio é o *Norming* e explica a normalização da equipe. Neste período, é realizada a definição do processo de trabalho onde o entusiasmo e os níveis de competência aumentam, os integrantes já conhecem uns aos outros e, tanto o respeito quanto o trabalho em equipe começam a ser rotineiros no dia-dia da equipe.
-
-  <img src="https://lh3.googleusercontent.com/-XZbwRzi4rVQ/X9ARJXDIcHI/AAAAAAAAKo4/RQnI-dW2IZQnte4_bE9JuovSRiaLgs_bgCLcBGAsYHQ/image.png | s" alt="alt" style="zoom:200%;" />
+![Mãos unidas em cima de um quebra cabeças.](./img/norming.jpg)
+<br>
+<br>
   
-- O quarto estágio é o *Performing* e explica a performatização da equipe. Neste período, a equipe executa o trabalho de modo muito produtivo e performático, torna-se auto gerenciável e organizado assim como cada membro da equipe sabe seu papel e sua importância para que os objetivos sejam atingidos. Ainda neste estágio, existe um orgulho imenso pelos integrantes da equipe em pertencer à esta, a necessidade do líder para resolução de problemas torna-se cada vez menor.
+### Performing 
+O quarto ciclo aborda a performatização da equipe. Nele, a equipe já executa o trabalho de modo muito produtivo e performático, começa a tornar-se auto gerenciável, organizada, e cada membro da equipe sabe seu papel e a importância que ele tem para que os objetivos da equipe sejam atingidos. Ainda neste ciclo, a equipe exibe um sentimento de orgulho muito grande em fazer parte daquele grupo, a necessidade do líder para resolução de problemas torna-se cada vez menor.
 
-  <img src="https://lh3.googleusercontent.com/-LvpyTKaqwZ4/X9ARdCzvjPI/AAAAAAAAKpE/PwW2WHgBU5wAWTECQf2z1hSYIrN72AvGACLcBGAsYHQ/w400-h270/image.png | s" alt="alt" style="zoom:200%;" />
+![Pessoas com a mão levantada para cima em sinal de vitória e felicidade.](./img/performing.jpg)
+<br>
+<br>
 
 
-Em 1977, junto de Mary Ann Jensen, Bruce adicionou em sua teoria um quinto estágio, conhecido como *Adjourning*. Este, explica o fim do processo de formação de uma equipe. Neste período, todos os objetivos da equipe foram alcançados e, junto do orgulho pelo trabalho realizado existe a angústia pelo desconhecimento do que há por vir. A equipe pode ser mantida ou desmembrada, tudo depende da estratégia adotada pelo líder da mesma. O papel do líder torna-se novamente fundamental, pois será o principal responsável por trabalhar com o objetivo de definir o futuro dessa equipe.
+### Adjourning
 
-## Gráfico de Evolução 
-O gráfico abaixo demonstra a evolução da equipe dentro dos estágios abordados anteriormente. Demonstra de uma maneira resumida que, após a formação existe uma queda pois é um momento onde existem conflitos e, após superada esta fase, o objetivo torna-se naturalmente alcançar a normalização seguido de uma performance da equipe. O estágio *adjourning* não é considerável no gráfico pois trata-se do fim do processo de formação e é algo que pode ou não acontecer.
+Em 1977, junto de Mary Ann Jensen, Bruce Thuckman acrescentou um quinto ciclo em sua teoria, este ciclo é conhecido como *Adjourning*. Ele aborda o fim desse lindo processo de formação de equipe, neste ciclo todos os objetivos da equipe foram alcançados, e junto do sentimento de orgulho pelo trabalho realizado existe a angústia pelo desconhecimento de quais serão as próximas páginas dessa jornada. A equipe pode ser mantida ou desmembrada, tudo depende da estratégia adotada por quem a lidera. O papel do líder torna-se novamente fundamental, pois será o principal responsável por definir o futuro de cada membro da equipe.
 
-  <img src="https://lh3.googleusercontent.com/-L5_nyg47AcQ/X9AOnaW1TLI/AAAAAAAAKoY/rQmjVbiReGgaN4icJABguVWuaG10bMAAgCLcBGAsYHQ/w640-h428/image.png | s" alt="alt" style="zoom:200%;" />
+![Pessoas no dezerto sem saber o que fazer.](./img/adjourning.jpg)
+<br>
+<br>
 
-E aí, em qual dos estágios explicados a sua equipe encontra-se atualmente?
+## Conclusão
+Quem já teve a oportunidade de trabalhar em uma equipe desde sua criação até a entrega do objetivo final muito provavelmente já vivenciou os ciclos abordados pela teoria de Bruce Thuckman. A teoria explica básicamente as fases que um grupo de pessoas passa durante o percurso para atender um grande objetivo. Esse percurso carregará consigo o processo de formação, turbulência, normatização, performatização e dissolução/transformação da equipe. 
+
+.
+<br>
+.
+
+Deixa aqui nos comentários qual o ciclo que sua atual equipe está vivenciando. Forming, storming, norming, performing ou adjourning?

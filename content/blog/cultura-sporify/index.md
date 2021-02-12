@@ -7,7 +7,7 @@ references: ["https://www.youtube.com/watch?v=4GK1NDTWbkY"]
 comments: true
 ---
 
-Muitas empresas buscam por metodologias que as possibilitem serem mais ágeis em seus processos, no caso do Spotify, processos relacionados à desenvolvimento de software. Um dos cases de sucesso do Spotify é a sua cultura ágil. Em 2018, quando seu primeiro player de música foi lançado, a empresa já utilizava Scrum em seus processos de desenvolvimento.
+Um dos cases de sucesso do Spotify é a sua cultura ágil. Em 2018, quando seu primeiro player de música foi lançado, a empresa já utilizava Scrum em seus processos de desenvolvimento.
 
 > Scrum é um framework de gerenciamento de projetos, ele proporciona organização no desenvolvimento ágil de produtos complexos, visando entregar o  mais alto valor possível através de várias técnicas."
 

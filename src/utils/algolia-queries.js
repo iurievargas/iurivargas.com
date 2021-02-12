@@ -18,7 +18,8 @@ const pageQuery = `{
         id
         frontmatter {
           title
-          date(formatString: "DD MMMM, YYYY", locale: "pt-br")
+          formatedDate: date(formatString: "DD MMMM, YYYY", locale: "pt-br")
+          date
           description
         }
         fields {

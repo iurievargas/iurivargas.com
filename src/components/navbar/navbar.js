@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
 import { scale } from "../../utils/typography"
-import SocialLink from "../social/social-link"
 import ThemeToggle from "../theme-toggle/theme-toggle"
 import "./navbar.css";
 

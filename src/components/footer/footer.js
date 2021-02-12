@@ -24,6 +24,7 @@ const Footer = () => {
           <li>
             <a href="https://github.com/iurievargas/iurivargas.com/blob/master/LICENSE" 
             target="_blank" 
+            rel="noreferrer"
             >Termos</a>
           </li>
         </ul>

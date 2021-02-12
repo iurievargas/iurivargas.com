@@ -82,7 +82,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               marginBottom: rhythm(1),
             }}
           >
-            {post.frontmatter.date}
+            {post.frontmatter.formatedDate}
           </p>
         </header>
 
@@ -92,12 +92,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <span>Tudo bem?</span>
           </div>
           
-          <div style={{ marginTop: 10, marginBottom: 15}}>
+          <div style={{ marginTop: 5, marginBottom: 5, textAlign: "justify"}}>
             <span>{post.frontmatter.description}</span>
+            <br/>
+            <br/>
           </div>
         </div>
 
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section dangerouslySetInnerHTML={{ __html: post.html }} 
+        style={{ textAlign: "justify"}} />
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -140,7 +143,7 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 160)
       html
       frontmatter {
-        date(formatString: "DD MMMM, YYYY", locale: "pt-br")
+        formatedDate: date(formatString: "DD MMMM, YYYY", locale: "pt-br")
         title
         description
         references

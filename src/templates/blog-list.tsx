@@ -37,7 +37,7 @@ const BlogIndex = ({ data, location }) => {
                   </h3>
                   <small style={{ marginRight: `10px` }}>
                     {" "}
-                    <FontAwesomeIcon icon={faCalendarAlt} /> {hit.date}
+                    <FontAwesomeIcon icon={faCalendarAlt} /> {hit.formatedDate}
                   </small>
                   <small>
                     <FontAwesomeIcon icon={faMugHot} /> Leitura de{" "}
