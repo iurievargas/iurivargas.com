@@ -86,6 +86,7 @@ const AboutMePage = ({ location }) => {
       <span style={{ textAlign: "justify" }}>
         {biografia}
       </span>
+      <BackToHomeLink />
     </Layout>
   )
 }

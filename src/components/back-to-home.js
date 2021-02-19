@@ -8,7 +8,7 @@ function BackToHomeLink() {
         marginTop: `10px`,
         marginBottom: `10px`
       }}>
-        <SidebarLink title={`← Voltar às publicações`} url={`/`}></SidebarLink>
+        <SidebarLink title={`← Voltar à página inicial`} url={`/`}></SidebarLink>
       </div>
   )
 }

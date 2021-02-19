@@ -121,11 +121,10 @@ button {
 }
 
 .search-button > form > input  {
-  width: 300px;
   margin-top: 20px;
   border: #edf2f7 solid 0.1px ! important;
   border-radius: 30px;
-  padding: 15px;
+  padding-left: 30px !important;
   height: 50px;
   font-size: 18px;
   text-decoration: none;
@@ -145,8 +144,8 @@ button {
 }
 .search-button > form > button[type=reset]  {
     position: absolute;
-    top: 35px;
-    left: 20px;
+    top: 46px;
+    left: 10px !important;
     fill: silver;
 }
 
@@ -155,4 +154,8 @@ button {
 
 .inner > .ais-SearchBox.search-button {
   text-align: center;
+}
+
+.ais-Pagination-item{
+  display: inline;
 }

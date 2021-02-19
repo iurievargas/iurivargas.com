@@ -1,6 +1,7 @@
 import React from "react"
 import Footer from "./footer/footer"
 import "./global.css"
+import "./algolia.css"
 import Content from "./content/content"
 import Navbar from "./navbar/navbar"
 

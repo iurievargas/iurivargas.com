@@ -9,11 +9,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import algoliasearch from "algoliasearch/lite"
 import { connectHits, InstantSearch } from "react-instantsearch-dom"
 import SearchBox from "react-instantsearch-dom/dist/cjs/widgets/SearchBox"
+import Pagination from "react-instantsearch-dom/dist/cjs/widgets/Pagination"
 
 const searchClient = algoliasearch(
   process.env.GATSBY_ALGOLIA_APP_ID,
   process.env.GATSBY_ALGOLIA_SEARCH_KEY
 )
+
+const indexName = process.env.ALGOLIA_INDEX_NAME;
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -53,7 +56,9 @@ const BlogIndex = ({ data, location }) => {
               </article>
             )
           })}
+          <Pagination/>
         </div>
+        
       ) : (
         <p>Nenhuma publicação foi encontrada.</p>
       )}
@@ -66,7 +71,7 @@ const BlogIndex = ({ data, location }) => {
 
       <div className="outer">
         <div className="inner">
-          <InstantSearch searchClient={searchClient} indexName="Pages">
+          <InstantSearch searchClient={searchClient} indexName="master">
             <SearchBox
               className="search-button"
               translations={{ placeholder: "Pesquise por uma publicação..." }}
